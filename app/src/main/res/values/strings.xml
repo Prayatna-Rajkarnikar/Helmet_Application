@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Helmet_Application</string>
+
+    <string name="introSlider1_text">
+        This application is the personal designed portfolio.
+        This application have been designed to showcase my personal details or short bio data.
+    </string>
+    <string name="next_button">Next</string>
+    <string name="introSlider2_text">
+         It also contains skills screen where I have mentioned my skills
+        I have obtained in my school days as well as hobbies screen where you can find my personal interests
+    </string>
+    <string name="introSlider3_text">
+        Finally, it contains contact screen where you can input your details and ask me any questions
+        as well as can give any suggestions to improve my portfolio.
+    </string>
+    <string name="sliderNumber1">1 / 3</string>
+    <string name="sliderNumber2">2 / 3</string>
+    <string name="sliderNumber3">3 / 3</string>
+
+    <string name="login">Login</string>
+    <string name="signup_redirect">Not yet registered? Sign Up</string>
+    <string name="login_redirect">Already have an account? Login</string>
+    <string name="fullName">Full Name</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="signup">Sign Up</string>
+    <string name="btnSubmit">Submit</string>
+    <string name="contactDesc">Description</string>
+    <string name="contact_subheading">Get In Touch</string>
+    <string name="home_heading">Protect Your Passion</string>
+    <string name="new_arrivals">New Arrivals</string>
+    <string name="for_you">For You</string>
+    <string name="dob_heading">DOB:</string>
+    <string name="age_heading">Age:</string>
+    <string name="address_heading">Address:</string>
+
+
+
+
+</resources>
