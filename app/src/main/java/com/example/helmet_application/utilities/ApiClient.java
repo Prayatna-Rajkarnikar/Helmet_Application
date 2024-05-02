@@ -16,9 +16,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
-//    private static final String BASE_URL = "http://192.168.1.9/api/";
-
-    private static final String BASE_URL = "http://100.64.222.162/api/";
+    private static final String BASE_URL = "http://192.168.45.90/helmets/";
+//    private static final String BASE_URL = "http://100.64.215.36/api/";
     private static Retrofit retrofit;
 
     // Create the Retrofit instance
@@ -52,7 +51,7 @@ public class ApiClient {
                     // startActivity(new Intent(context, MainActivity.class));
                 } else {
                     // Registration failed
-                    Log.d("ApiClient", "Failed to register user. Response code: " + response.code());
+                    Log.d("ApiClient", "Failed to register user. Response code: " + response.code() + response.raw().request());
                     Toast.makeText(context, "Failed to register user. Please try again later.", Toast.LENGTH_SHORT).show();
                 }
             }

@@ -37,6 +37,14 @@
     <string name="address_heading">Address:</string>
 
 
+    <string name="aboutUsHeading">About Us</string>
+    <string name="aboutUs"> Welcome to TopGuard Helmets, the premier source for top-tier head protection.
+        We take pride in offering a diverse selection of helmets that correspond to our customers\'
+        specific needs and preferences.
+        We have you covered with everything from stylish motorcycle helmets to sturdy bicycle helmets.
+        Our dedication to safety is unwavering; every helmet in our inventory undergoes extensive testing
+        to ensure that it meets or exceeds the most stringent safety requirements.</string>
+
 
 
 </resources>

@@ -61,25 +61,4 @@
                 tools:text="Click  to Order"/>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
-
-    <!-- Duplicate CardViews -->
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginLeft="11dp"
-        android:layout_marginRight="11dp"
-        android:layout_marginTop="7dp"
-        android:layout_marginBottom="7dp">
-
-        <!-- Contents of the Duplicate CardView -->
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <!-- Contents same as the Original CardView, just adjust the IDs if needed -->
-        </RelativeLayout>
-    </androidx.cardview.widget.CardView>
-
-    <!-- Repeat the Duplicate CardView block 4 more times for a total of 5 duplicates -->
-
 </LinearLayout>

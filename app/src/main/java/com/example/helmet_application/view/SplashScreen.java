@@ -24,7 +24,7 @@ public class SplashScreen extends AppCompatActivity {
             public void run() {
 
                 // Begin the IntroSliderMain activity by creating an Intent
-                Intent intent = new Intent(SplashScreen.this, Signup_Activity.class);
+                Intent intent = new Intent(SplashScreen.this, Login_Activity.class);
                 startActivity(intent);
 
                 // Finish the current SplashScreen activity to prevent returning to it on back press
