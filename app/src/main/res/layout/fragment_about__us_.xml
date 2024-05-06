@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".view.About_Us_Fragment">
+    tools:context=".view.viewholder.About_Us_Fragment">
 
     <TextView
         android:layout_width="wrap_content"

@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@drawable/login_page"
-    tools:context=".view.Signup_Activity">
+    tools:context=".view.viewholder.Signup_Activity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/signup_card"

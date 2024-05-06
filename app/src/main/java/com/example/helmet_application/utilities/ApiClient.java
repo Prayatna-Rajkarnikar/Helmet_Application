@@ -4,10 +4,13 @@ import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.example.helmet_application.model.Helmets;
 import com.example.helmet_application.model.User;
 import com.example.helmet_application.model.UserLogin;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -16,8 +19,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
-    private static final String BASE_URL = "http://192.168.45.90/helmets/";
-//    private static final String BASE_URL = "http://100.64.215.36/api/";
+    private static final String BASE_URL = "http://100.64.209.179/helmets/";
     private static Retrofit retrofit;
 
     // Create the Retrofit instance
@@ -112,6 +114,25 @@ public class ApiClient {
                 // Display error message to the user
                 Toast.makeText(context, errorMessage, Toast.LENGTH_SHORT).show();
                 Log.e("ApiClient", "Login failed: " + errorMessage);
+            }
+        });
+    }
+    public void getHelmets(ApiCallback callback) {
+        Call<List<Helmets>> call = createApiService().getHelmets();
+        call.enqueue(new Callback<List<Helmets>>() {
+            @Override
+            public void onResponse(Call<List<Helmets>> call, Response<List<Helmets>> response) {
+                if (response.isSuccessful()) {
+                    ArrayList<Helmets> products = new ArrayList<>(response.body());
+                    callback.onSuccess(products);
+                } else {
+                    callback.onFailure("Failed to get products. Response code: " + response.code());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<Helmets>> call, Throwable t) {
+                callback.onFailure("Failed to get products: " + t.getMessage());
             }
         });
     }

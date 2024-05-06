@@ -1,4 +1,4 @@
-package com.example.helmet_application.view;
+package com.example.helmet_application.view.viewholder;
 
 import android.os.Bundle;
 
