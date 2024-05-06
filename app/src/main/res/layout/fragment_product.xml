@@ -25,8 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="4"
-                android:scaleType="centerCrop"
-                android:src="@drawable/aboutus_image"/>
+                android:scaleType="centerCrop"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -47,6 +46,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="20sp"
+                        android:fontFamily="@font/nunito_sans_regular"
                         android:maxLines="1"
                         android:textColor="@color/blue_purple" />
                 </LinearLayout>
@@ -63,6 +63,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/blue_purple"
                         android:textSize="18sp"
+                        android:fontFamily="@font/nunito_sans_regular"
                         android:textAlignment="center" />
 
                 </LinearLayout>

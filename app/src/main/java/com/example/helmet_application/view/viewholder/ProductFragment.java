@@ -18,7 +18,6 @@ import com.example.helmet_application.R;
 public class ProductFragment extends RecyclerView.ViewHolder {
     public TextView tvHelmetName;
     public TextView tvPrice;
-
     public ImageView imgHelmets;
 
     public ProductFragment(@NonNull View itemView) {
@@ -26,7 +25,7 @@ public class ProductFragment extends RecyclerView.ViewHolder {
 
         tvHelmetName = itemView.findViewById(R.id.tvHelmetName);
         tvPrice = itemView.findViewById(R.id.tvPrice);
-        imgHelmets = itemView.findViewById(R.id.imageView);
+        imgHelmets = itemView.findViewById(R.id.imgHelmets );
 
 
     }
