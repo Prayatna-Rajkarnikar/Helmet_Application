@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -31,7 +31,7 @@
                 android:layout_height="130dp"
                 android:scaleType="centerCrop"
                 android:layout_margin="10dp"
-                android:src="@drawable/login_page"/>
+                android:src="@drawable/home1"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -66,6 +66,44 @@
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:padding="10dp">
+
+                                    <ImageView
+                                        android:layout_width="100dp"
+                                        android:layout_height="100dp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/home2"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/shoei"
+                                        android:textColor="@color/black"
+                                        android:layout_marginTop="5dp"
+                                        android:textSize="13sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/shoeiRate"
+                                        android:textColor="@color/black"
+                                        android:textSize="20sp" />
+
+                                </LinearLayout>
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="130dp"
+                                android:layout_height="180dp"
+                                android:layout_margin="10dp"
+                                app:cardCornerRadius="10dp"
+                                android:backgroundTint="@color/grey">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:orientation="vertical"
                                     android:padding="10dp">
@@ -74,19 +112,20 @@
                                         android:layout_width="100dp"
                                         android:layout_height="100dp"
                                         android:scaleType="centerCrop"
-                                        android:src="@drawable/login_page"/>
+                                        android:src="@drawable/hd"/>
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Nike Air Max 2090"
+                                        android:text="@string/HD"
+                                        android:layout_marginTop="5dp"
                                         android:textColor="@color/black"
                                         android:textSize="13sp" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="₹150"
+                                        android:text="@string/HDrate"
                                         android:textColor="@color/black"
                                         android:textSize="20sp" />
 
@@ -103,26 +142,29 @@
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="match_parent"
                                     android:orientation="vertical"
                                     android:padding="10dp">
 
+
                                     <ImageView
                                         android:layout_width="100dp"
-                                        android:layout_height="100dp"
-                                        android:scaleType="centerCrop"/>
+                                        android:layout_height="105dp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/slider3" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Nike Air Max 2090"
+                                        android:text="@string/smith"
+                                        android:layout_marginTop="5dp"
                                         android:textColor="@color/black"
-                                        android:textSize="15sp" />
+                                        android:textSize="13sp" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="₹150"
+                                        android:text="@string/smithRate"
                                         android:textColor="@color/black"
                                         android:textSize="20sp" />
 
@@ -139,7 +181,7 @@
 
                                 <LinearLayout
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="match_parent"
                                     android:orientation="vertical"
                                     android:padding="10dp">
 
@@ -148,56 +190,20 @@
                                         android:layout_width="100dp"
                                         android:layout_height="100dp"
                                         android:scaleType="centerCrop"
-                                        />
+                                        android:src="@drawable/slider4"/>
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Nike Air Max 2090"
+                                        android:text="@string/k1"
                                         android:textColor="@color/black"
-                                        android:textSize="15sp" />
+                                        android:layout_marginTop="5dp"
+                                        android:textSize="13sp" />
 
                                     <TextView
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="₹150"
-                                        android:textColor="@color/black"
-                                        android:textSize="20sp" />
-
-                                </LinearLayout>
-
-                            </androidx.cardview.widget.CardView>
-
-                            <androidx.cardview.widget.CardView
-                                android:layout_width="130dp"
-                                android:layout_height="180dp"
-                                android:layout_margin="10dp"
-                                app:cardCornerRadius="10dp"
-                                android:backgroundTint="@color/grey">
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:orientation="vertical"
-                                    android:padding="10dp">
-
-
-                                    <ImageView
-                                        android:layout_width="100dp"
-                                        android:layout_height="100dp"
-                                        android:scaleType="centerCrop" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="Nike Air Max 2090"
-                                        android:textColor="@color/black"
-                                        android:textSize="15sp" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:text="₹150"
+                                        android:text="@string/k1Rate"
                                         android:textColor="@color/black"
                                         android:textSize="20sp" />
                                 </LinearLayout>
@@ -220,7 +226,7 @@
                 android:layout_height="150dp"
                 android:scaleType="centerCrop"
                 android:layout_margin="10dp"
-                android:src="@drawable/login_page"/>
+                android:src="@drawable/slider"/>
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </RelativeLayout>
