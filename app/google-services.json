@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "20589782456",
-    "project_id": "helmet-application",
-    "storage_bucket": "helmet-application.appspot.com"
+    "project_number": "966758490254",
+    "project_id": "topguard-helmets",
+    "storage_bucket": "topguard-helmets.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:20589782456:android:2b84f8612dc2a01b075b4d",
+        "mobilesdk_app_id": "1:966758490254:android:ddefa4bc84ea9dbc28a9df",
         "android_client_info": {
           "package_name": "com.example.helmet_application"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDHitpwg9qZ771IO7WWyEpcmgXqINrESzQ"
+          "current_key": "AIzaSyAV63cfJyyBMoOjQv4LYDnDlkv5MZorJBU"
         }
       ],
       "services": {

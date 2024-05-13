@@ -1,7 +1,8 @@
-package com.example.helmet_application;
+package com.example.helmet_application.view.viewholder;
 
 import android.os.Bundle;
 
+import com.example.helmet_application.R;
 import com.example.helmet_application.model.Helmets;
 import com.example.helmet_application.utilities.ApiCallback;
 import com.example.helmet_application.utilities.ApiClient;

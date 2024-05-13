@@ -1,9 +1,11 @@
 package com.example.helmet_application.view.viewholder;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,6 +28,13 @@ public class Login_Activity extends AppCompatActivity {
         usernameEditTxt = findViewById(R.id.et_loginUsername);
         passwordEditTxt = findViewById(R.id.et_loginPassword);
         loginBtn = findViewById(R.id.btn_Login);
+
+        TextView signupText = findViewById(R.id.signupRedirectText);
+        signupText.setOnClickListener(v -> {
+            Intent intent = new Intent(Login_Activity.this, Signup_Activity.class);
+            startActivity(intent);
+            finish(); // Optional, to close the current activity
+        });
 
         loginBtn.setOnClickListener(v -> {
             String username = usernameEditTxt.getText().toString();

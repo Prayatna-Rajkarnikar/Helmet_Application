@@ -13,7 +13,7 @@ import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
 public class MyFireBaseMessaging extends FirebaseMessagingService {
-    private static final String TAG="MyFireBaeMessaging";
+    private static final String TAG="MyFireBaseMessaging";
     private static final String CHANNEL_ID="notification";
 
 
@@ -46,6 +46,7 @@ public class MyFireBaseMessaging extends FirebaseMessagingService {
 
     private void showNotification(String title, String message) {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
+                .setSmallIcon(R.mipmap.ic_app_icon)
                 .setContentTitle(title)
                 .setContentText(message)
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT);
@@ -67,4 +68,5 @@ public class MyFireBaseMessaging extends FirebaseMessagingService {
         // Show the notification
         notificationManager.notify(0, builder.build());
     }
+
 }

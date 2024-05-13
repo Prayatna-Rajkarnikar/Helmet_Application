@@ -9,12 +9,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.helmet_application.R;
 import com.example.helmet_application.model.Helmets;
+import com.example.helmet_application.view.viewholder.HelmetDetails;
 import com.example.helmet_application.view.viewholder.ProductFragment;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class PostAdapter extends RecyclerView.Adapter<ProductFragment> {
+public class PostAdapter extends RecyclerView.Adapter<HelmetDetails> {
     private ArrayList<Helmets> helmets;
 
     public PostAdapter(ArrayList<Helmets> products) {
@@ -23,13 +24,13 @@ public class PostAdapter extends RecyclerView.Adapter<ProductFragment> {
 
     @NonNull
     @Override
-    public ProductFragment onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public HelmetDetails onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_product, parent, false);
-        return new ProductFragment(view);
+        return new HelmetDetails(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ProductFragment holder, int position) {
+    public void onBindViewHolder(@NonNull HelmetDetails holder, int position) {
         Helmets product = helmets.get(position);
         holder.tvHelmetName.setText(product.getHelmetName());
         holder.tvPrice.setText(product.getHelmet_price());
