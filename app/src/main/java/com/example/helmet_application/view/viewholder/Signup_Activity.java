@@ -47,16 +47,24 @@ public class Signup_Activity extends AppCompatActivity {
 
 
             if (username.isEmpty() ||fullName.isEmpty() ||  email.isEmpty() || password.isEmpty()) {
-                Toast.makeText(Signup_Activity.this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Signup_Activity.this, "Please provide all required information.", Toast.LENGTH_SHORT).show();
+            } else if (!doesSymbolExist(fullName)) {
+                Toast.makeText(Signup_Activity.this, "Full Name cannot contain symbols and numbers.", Toast.LENGTH_SHORT).show();
             } else {
                 User user = new User( username, fullName, email,  password);
                 System.out.println(user.getUser_FullName());
-                registerUser(user);
+                signupUser(user);
             }
         });
     }
 
-    private void registerUser(User user) {
-        ApiClient.registerUser(user, this);
+    private void signupUser(User user) {
+        ApiClient.signupUser(user, this);
+    }
+
+    private boolean doesSymbolExist(String fullName) {
+        // Regular expression to check if full name contains only letters, spaces, and hyphens
+        String regex = "^[a-zA-Z\\s-]*$";
+        return fullName.matches(regex);
     }
 }

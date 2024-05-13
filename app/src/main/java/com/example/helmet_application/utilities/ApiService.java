@@ -14,10 +14,10 @@ import retrofit2.http.POST;
 
 public interface ApiService {
     @POST("register.php")
-    Call<Object> registerUser(@Body User user);
+    Call<Object> signupUser(@Body User user);
 
     @POST("login.php")
-    Call<Object> loginUser(@Body UserLogin password);
+    Call<Object> loginHelmetUser(@Body UserLogin password);
 
     @GET("helmets.php")
     Call<List<Helmets>> getHelmets();

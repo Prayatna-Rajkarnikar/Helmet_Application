@@ -5,6 +5,6 @@ import com.example.helmet_application.model.Helmets;
 import java.util.ArrayList;
 
 public interface ApiCallback {
-    void onSuccess(ArrayList<Helmets> productList);
+    void onAccomplished(ArrayList<Helmets> helmetList);
     void onFailure(String message);
 }

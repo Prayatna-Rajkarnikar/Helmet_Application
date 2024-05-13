@@ -33,7 +33,7 @@ public class Login_Activity extends AppCompatActivity {
         signupText.setOnClickListener(v -> {
             Intent intent = new Intent(Login_Activity.this, Signup_Activity.class);
             startActivity(intent);
-            finish(); // Optional, to close the current activity
+            finish();
         });
 
         loginBtn.setOnClickListener(v -> {
@@ -45,12 +45,11 @@ public class Login_Activity extends AppCompatActivity {
 
             // Validate input fields
             if (username.isEmpty() || password.isEmpty()) {
-                Toast.makeText(Login_Activity.this, "Please enter username and password", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Login_Activity.this, "Please provide both username and password", Toast.LENGTH_SHORT).show();
             } else {
                 // Call loginUser method with username, password, and context
-                ApiClient.loginUser(username, password, Login_Activity.this);
+                ApiClient.loginHelmetUser(username, password, Login_Activity.this);
             }
         });
-
     }
 }

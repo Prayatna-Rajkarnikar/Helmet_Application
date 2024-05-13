@@ -10,15 +10,14 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.helmet_application.R;
 import com.example.helmet_application.model.Helmets;
 import com.example.helmet_application.view.viewholder.HelmetDetails;
-import com.example.helmet_application.view.viewholder.ProductFragment;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-public class PostAdapter extends RecyclerView.Adapter<HelmetDetails> {
+public class PostAdapt extends RecyclerView.Adapter<HelmetDetails> {
     private ArrayList<Helmets> helmets;
 
-    public PostAdapter(ArrayList<Helmets> products) {
+    public PostAdapt(ArrayList<Helmets> products) {
         this.helmets = products;
     }
 
